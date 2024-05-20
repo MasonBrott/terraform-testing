@@ -1,14 +1,9 @@
 terraform {
     backend "gcs" {}
-    provider "google" {
-    project = " test-environment-423919"
-    region = "us-central1"
-    }   
-}
-
-required_providers {
-    google = {
-      version = ">=5.15.0"
+    required_providers {
+        google = {
+            version = ">=5.15.0"
+        }
     }
 }
 
